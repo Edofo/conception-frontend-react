@@ -9,6 +9,9 @@ import TimerPage from "./pages/Timer.tsx";
 import { HOME, TIMER } from "./constants/routes.ts";
 import Layout from "./components/Layout.tsx";
 import { AuthProvider } from "./contexts/AuthContext.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -29,10 +32,12 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <AuthProvider>
-      <CountProvider>
-        <RouterProvider router={router} />
-      </CountProvider>
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <CountProvider>
+          <RouterProvider router={router} />
+        </CountProvider>
+      </AuthProvider>
+    </QueryClientProvider>
   </StrictMode>
 );

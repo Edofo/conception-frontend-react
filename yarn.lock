@@ -319,6 +319,25 @@
   resolved "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.52.3.tgz"
   integrity sha512-lj9ViATR1SsqycwFkJCtYfQTheBdvlWJqzqxwc9f2qrcVrQaF/gCuBRTiTolkRWS6KvNxSk4KHZWG7tDktLgjg==
 
+"@tanstack/eslint-plugin-query@^5.91.0":
+  version "5.91.0"
+  resolved "https://registry.npmjs.org/@tanstack/eslint-plugin-query/-/eslint-plugin-query-5.91.0.tgz"
+  integrity sha512-Kn6yWyRe3dIPf7NqyDMhcsTBz2Oh8jPSOpBdlnLQhGBJ6iTMBFYA4B1UreGJ/WdfzQskSMh5imcyWF+wqa/Q5g==
+  dependencies:
+    "@typescript-eslint/utils" "^8.44.1"
+
+"@tanstack/query-core@5.90.2":
+  version "5.90.2"
+  resolved "https://registry.npmjs.org/@tanstack/query-core/-/query-core-5.90.2.tgz"
+  integrity sha512-k/TcR3YalnzibscALLwxeiLUub6jN5EDLwKDiO7q5f4ICEoptJ+n9+7vcEFy5/x/i6Q+Lb/tXrsKCggf5uQJXQ==
+
+"@tanstack/react-query@^5.90.2":
+  version "5.90.2"
+  resolved "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.90.2.tgz"
+  integrity sha512-CLABiR+h5PYfOWr/z+vWFt5VsOA2ekQeRQBFSKlcoW6Ndx/f8rfyVmq4LbgOM4GG2qtxAxjLYLOpCNTYm4uKzw==
+  dependencies:
+    "@tanstack/query-core" "5.90.2"
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz"
@@ -454,7 +473,7 @@
     semver "^7.6.0"
     ts-api-utils "^2.1.0"
 
-"@typescript-eslint/utils@8.45.0":
+"@typescript-eslint/utils@^8.44.1", "@typescript-eslint/utils@8.45.0":
   version "8.45.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.45.0.tgz"
   integrity sha512-bxi1ht+tLYg4+XV2knz/F7RVhU0k6VrSMc9sb8DQ6fyCTrGQLHfo7lDtN0QJjZjKkLA2ThrKuCdHEvLReqtIGg==
@@ -1322,7 +1341,7 @@ react-router@^7.9.3:
     cookie "^1.0.1"
     set-cookie-parser "^2.6.0"
 
-react@^19.1.1, react@>=18:
+"react@^18 || ^19", react@^19.1.1, react@>=18:
   version "19.1.1"
   resolved "https://registry.npmjs.org/react/-/react-19.1.1.tgz"
   integrity sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==
