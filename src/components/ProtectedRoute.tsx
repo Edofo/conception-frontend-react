@@ -5,7 +5,7 @@ import { Navigate, Outlet } from "react-router";
 const ProtectedRoute = () => {
   const { isAuthenticated } = useAuthContext();
 
-  if (!isAuthenticated) {
+  if (isAuthenticated) {
     return <Navigate to={HOME} />;
   }
 

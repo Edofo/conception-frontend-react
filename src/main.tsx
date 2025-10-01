@@ -9,25 +9,19 @@ import TimerPage from "./pages/Timer.tsx";
 import { HOME, TIMER } from "./constants/routes.ts";
 import Layout from "./components/Layout.tsx";
 import { AuthProvider } from "./contexts/AuthContext.tsx";
-import ProtectedRoute from "./components/ProtectedRoute.tsx";
 
 const router = createBrowserRouter([
   {
     path: HOME,
-    element: <ProtectedRoute />,
+    element: <Layout />,
     children: [
       {
-        element: <Layout />,
-        children: [
-          {
-            index: true,
-            element: <App />,
-          },
-          {
-            path: TIMER,
-            element: <TimerPage />,
-          },
-        ],
+        index: true,
+        element: <App />,
+      },
+      {
+        path: TIMER,
+        element: <TimerPage />,
       },
     ],
   },

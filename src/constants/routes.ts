@@ -1,4 +1,4 @@
 const HOME = "/";
-const TIMER = "/timer/:id";
+const TIMER = "/timer/:time";
 
 export { HOME, TIMER };
